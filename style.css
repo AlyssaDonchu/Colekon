@@ -2,11 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'arial';
+    font-family: 'Geometria', 'Arial Black', 'Arial';
 }
 
+@font-face {
+	font-family: 'Arial Black';
+	src: url('fonts/arial_black/'); /* IE 9 Compatibility Mode */
+	src: url('fonts/arial_black/?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/arial_black//fonts/arial_black.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/arial_black//fonts/arial_black.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/arial_black//fonts/arial_black.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/arial_black//fonts/arial_black.svg#arial_black') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('fonts/geometria/'); /* IE 9 Compatibility Mode */
+	src: url('fonts/geometria/?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/geometria//fonts/geometria.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/geometria//fonts/geometria.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/geometria//fonts/geometria.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/geometria//fonts/geometria.svg#geometria') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+.cursor {
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference; //for dark and light modes
+    background-color: transparent;
+    z-index: 10000;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    transition: all 300ms ease-out;
+  }
+
 section {
-    background-color: black;
+    background-color: #242424;
 }
 
 .click {
