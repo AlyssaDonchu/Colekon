@@ -115,13 +115,13 @@ button {
     position: absolute;
     color: white;
     bottom: 20px;
-    right: 50%;
+    left: 50%;
     font-size: 32px;
-    
+
 }
 
 .scroll:hover {
-    animation: bounce 2s infinite;
+    animation: bounce 2s infinite alternate-reverse;
 }
 
 @keyframes bounce {
