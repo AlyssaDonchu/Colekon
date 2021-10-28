@@ -84,6 +84,11 @@ button {
 .header__para {
     color: white;
 }
+
+@media (hover: none) {
+    a:hover { color: inherit; }
+  }
+  
 /* 
 
    ------------------------------- LANDING-PAGE -------------------------------
@@ -224,7 +229,14 @@ nav {
 }
 
 .project__img {
+    position: relative;
     width: 45%;
+    border-radius: 5%;
+}
+
+.project__img--photo0-border {
+    border-bottom: 25px solid black;
+    border-top: 25px solid black;
 }
 
 .project__wrapper {
