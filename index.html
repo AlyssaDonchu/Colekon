@@ -69,7 +69,17 @@
         <button class="mail__btn click">
             <i class="far fa-envelope"></i>
         </button>
-        <a href="#portfolio" class="scroll bounce"><i class="fas fa-sort-down"></i></a>
+        <a href="#portfolio" class="scroll bounce"><i class="fas fa-sort-down"></i>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title__about">Немного обо мне</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">текст текст текст текст текст</h4>
+                <p class="modal__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+                    qui perspiciatis vero ut optio at iure aperiam eius exercitationem eaque.</p>
+            </div>
+            <div class="modal__half modal__contact">Напиши мне напиши</div>
+        </div>
     </section>
     <section class="projects">
         <div class="container">
@@ -80,8 +90,9 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <div class="project__img--2first">
-                                <img src="/assets/photo0.jpg" class="project__img project__img--photo0-border" alt="">
+                            <figure class="img__wrapper">
+                                <img src="/assets/photo0.jpg" class="project__img 
+                                project__img--photo0-border" alt="">
                                 <div class="project__description-0 project__description">
                                     <h3 class="project__description--title">
                                         Мои фото
@@ -97,7 +108,10 @@
                                     <div class="project__description--links">
                                         <a href="" class="project__description--link"></a>
                                     </div>
+
                                 </div>
+                            </figure>
+                            <figure class="img__wrapper">
                                 <img src="/assets/concert0.jpg" class="project__img" alt="">
                                 <div class="project__description-1 project__description">
                                     <h3 class="project__description--title">
@@ -114,9 +128,10 @@
                                     <div class="project__description--links">
                                         <a href="" class="project__description--link"></a>
                                     </div>
+
                                 </div>
-                            </div>
-                            <div class="project__img--2second">
+                            </figure>
+                            <figure class="img__wrapper">
                                 <img src="/assets/photo1.jpg" class="project__img" alt="">
                                 <div class="project__description-2 project__description">
                                     <h3 class="project__description--title">
@@ -134,6 +149,8 @@
                                         <a href="" class="project__description--link"></a>
                                     </div>
                                 </div>
+                            </figure>
+                            <figure class="img__wrapper">
                                 <img src="/assets/photo2.jpg" class="project__img" alt="">
                                 <div class="project__description-3 project__description">
                                     <h3 class="project__description--title">
@@ -150,8 +167,9 @@
                                     <div class="project__description--links">
                                         <a href="" class="project__description--link"></a>
                                     </div>
+
                                 </div>
-                            </div>
+                            </figure>
                         </div>
                     </li>
                 </ul>
