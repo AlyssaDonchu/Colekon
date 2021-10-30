@@ -66,7 +66,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="far fa-envelope"></i>
         </button>
         <a href="#portfolio" class="scroll bounce"><i class="fas fa-sort-down"></i>
@@ -79,22 +79,25 @@
                     qui perspiciatis vero ut optio at iure aperiam eius exercitationem eaque.</p>
             </div>
             <div class="modal__half modal__contact">
-                <h3 class="modal__title modal__title--contact">Напиши мне напиши</h3>
+                <i class="fas fa-times modal__exit click"></i>
+                <h3 class="modal__title modal__title--contact">
+                    Напиши мне напиши
+                </h3>
                 <h3 class="modal__sub-title modal__sub-title--contact">
                     напиши мне ради бога
                 </h3>
-                <form action="" class="contact__form">
+                <form onsubmit="contact(event)" class="contact__form">
                     <div class="form__item">
                         <label class="form__item--label">Имя</label>
-                        <input class="input" name="user_name" type="text" required></input>
+                        <input class="input" name="user_name" type="text"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Эл. Почта</label>
-                        <input class="input" name="user_email" type="email" required></input>
+                        <input class="input" name="user_email" type="email"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Сообщение</label>
-                        <textarea class="input" name="message" type="text" required></textarea>
+                        <textarea class="input" name="message" type="text"></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
                         Отправить
@@ -107,7 +110,7 @@
                     Спасибо, ваше сообщение получено.
                 </div>
             </div>
-            <i class="fas fa-times modal__exit click"></i>
+
         </div>
     </section>
     <section class="projects">
