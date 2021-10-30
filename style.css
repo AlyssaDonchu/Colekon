@@ -128,10 +128,16 @@ button {
     color: white;
 }
 
-@media (hover: none) {
-    a:hover { color: inherit; }
-  }
+@media only screen and (max-width: 900px) {
 
+    .project__description, .project__description--para{
+        font-size: 10px;
+    }
+    .project__description {
+        top: 30px;
+    }
+
+  }
   /* 
 
    ------------------------------- CURSOR -------------------------------
@@ -293,6 +299,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .modal__about {
@@ -339,6 +346,33 @@ nav {
     color: #f06449;
 }
 
+.modal__overlay--loading {
+    background-color: #242424;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    z-index: -1;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /* 
 
    ------------------------------- PROJECTS -------------------------------
