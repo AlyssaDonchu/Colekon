@@ -18,7 +18,7 @@
         const cursor = document.querySelector('.cursor');
 
         document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: " +(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
 
         })
 
@@ -38,26 +38,26 @@
             ">Портфолио</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="/price.html" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
             ">Прайс</a>
                 </li>
-                <li class="nav__link">
-                    <a href="#" class="
+                <li class="nav__link" onclick="toggleModal()" >
+                    <a href="#"  class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-            ">Связь</a>
+            " >Связь</a>
                 </li>
-                <li class="nav__link click">
+                <!-- <li class="nav__link click">
                     <a href="#" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
             "><i class="fas fa-adjust"></i></a>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <header class="header">
@@ -124,7 +124,7 @@
 
         </div>
     </section>
-    <section class="projects">
+    <section id="portfolio" class="projects">
         <div class="container">
             <div class="row">
                 <h1 class="section__title">
@@ -133,14 +133,17 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <figure class="img__wrapper">
-                                <img src="/assets/photo0.jpg" class="project__img 
+                            <a href="/graduate.html" class="
+                            nav__link--anchor
+                            link__hover-effect--black">
+                                <figure class="img__wrapper">
+                                    <img src="/assets/photo0.jpg" class="project__img 
                                 project__img--photo0-border" alt="">
-                                <div class="project__description-0 project__description">
-                                    <h3 class="project__description--title">
-                                        Выпускной альбом
-                                    </h3>
-                                    <!-- <h4 class="project__description--sub-title">
+                                    <div class="project__description-0 project__description">
+                                        <h3 class="project__description--title">
+                                            Выпускной альбом
+                                        </h3>
+                                        <!-- <h4 class="project__description--sub-title">
                                         ля ля ля лаввап текст какой-то там
                                     </h4>
                                     <p class="project__description--para">
@@ -148,12 +151,16 @@
                                         consectetur adipisicing elit. Odit praesentium,
                                         placeat earum aperiam soluta est?
                                     </p> -->
-                                    <div class="project__description--links">
-                                        <a href="" class="project__description--link"></a>
-                                    </div>
+                                        <div class="project__description--links">
+                                            <a href="" class="project__description--link"></a>
+                                        </div>
+                            </a>
 
-                                </div>
-                            </figure>
+                        </div>
+                        </figure>
+                        <a href="/concert.html" class="
+                            nav__link--anchor
+                            link__hover-effect--black">
                             <figure class="img__wrapper">
                                 <img src="/assets/concert0.jpg" class="project__img" alt="">
                                 <div class="project__description-1 project__description">
@@ -171,52 +178,60 @@
                                     <div class="project__description--links">
                                         <a href="" class="project__description--link"></a>
                                     </div>
+                        </a>
 
-                                </div>
-                            </figure>
-                            <figure class="img__wrapper">
-                                <img src="/assets/photo1.jpg" class="project__img" alt="">
-                                <div class="project__description-2 project__description">
-                                    <h3 class="project__description--title">
-                                        Портрет
-                                    </h3>
-                                    <!-- <h4 class="project__description--sub-title">
-                                        ля ля ля лаввап текст какой-то там
-                                    </h4>
-                                    <p class="project__description--para">
-                                        Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Odit praesentium,
-                                        placeat earum aperiam soluta est?
-                                    </p> -->
-                                    <div class="project__description--links">
-                                        <a href="" class="project__description--link"></a>
-                                    </div>
-                                </div>
-                            </figure>
-                            <figure class="img__wrapper">
-                                <img src="/assets/photo2.jpg" class="project__img" alt="">
-                                <div class="project__description-3 project__description">
-                                    <h3 class="project__description--title">
-                                        Стрит
-                                    </h3>
-                                    <!-- <h4 class="project__description--sub-title">
-                                        ля ля ля лаввап текст какой-то там
-                                    </h4>
-                                    <p class="project__description--para">
-                                        Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Odit praesentium,
-                                        placeat earum aperiam soluta est?
-                                    </p> -->
-                                    <div class="project__description--links">
-                                        <a href="" class="project__description--link"></a>
-                                    </div>
-
-                                </div>
-                            </figure>
-                        </div>
-                    </li>
-                </ul>
             </div>
+            </figure>
+            <a href="/portait.html" class="
+            nav__link--anchor
+            link__hover-effect--black">
+                <figure class="img__wrapper">
+                    <img src="/assets/photo1.jpg" class="project__img" alt="">
+                    <div class="project__description-2 project__description">
+                        <h3 class="project__description--title">
+                            Портрет
+                        </h3>
+                        <!-- <h4 class="project__description--sub-title">
+                                        ля ля ля лаввап текст какой-то там
+                                    </h4>
+                                    <p class="project__description--para">
+                                        Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Odit praesentium,
+                                        placeat earum aperiam soluta est?
+                                    </p> -->
+                        <div class="project__description--links">
+                            <a href="" class="project__description--link"></a>
+                        </div>
+            </a>
+        </div>
+        </figure>
+        <a href="/street.html" class="
+            nav__link--anchor
+            link__hover-effect--black">
+            <figure class="img__wrapper">
+                <img src="/assets/photo2.jpg" class="project__img" alt="">
+                <div class="project__description-3 project__description">
+                    <h3 class="project__description--title">
+                        Стрит
+                    </h3>
+                    <!-- <h4 class="project__description--sub-title">
+                                        ля ля ля лаввап текст какой-то там
+                                    </h4>
+                                    <p class="project__description--para">
+                                        Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Odit praesentium,
+                                        placeat earum aperiam soluta est?
+                                    </p> -->
+                    <div class="project__description--links">
+                        <a href="" class="project__description--link"></a>
+                    </div>
+        </a>
+        </div>
+        </figure>
+        </div>
+        </li>
+        </ul>
+        </div>
         </div>
     </section>
     <footer>
@@ -226,18 +241,18 @@
                     <img class="footer__logo--img" src="/assets/logo.png" alt="">
                 </figure>
                 <div class="footer__social--list">
-                    <a href="" class="
+                    <a href="https://vk.com/rinatmiller" target="_blank" class="
                     footer__social--link 
                 link__hover-effect
                 link__hover-effect--white">
                         Vkontakte
                     </a>
-                    <a href="" class="
+                    <a href="https://www.instagram.com/krichite/" target="_blank" class="
                     footer__social--link 
                 link__hover-effect
                 link__hover-effect--white">
                         Instagram</a>
-                    <a href="" class="
+                    <a href="#" onclick="toggleModal()" class="
                     footer__social--link 
                 link__hover-effect
                 link__hover-effect--white">

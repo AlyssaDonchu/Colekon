@@ -20,3 +20,4 @@ function toggleModal() {
     isModalopen = !isModalopen;
     document.body.classList += " modal--open";
 }
+
