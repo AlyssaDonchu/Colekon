@@ -5,24 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ринат. Не Ренат.</title>
+    <title>Cole Kon</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="cursor"></div>
-    <script>
-
-        const cursor = document.querySelector('.cursor');
-
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-
-        })
-
-    </script>
     <section id="landing-page">
 
         <nav>
@@ -62,12 +51,12 @@
         </nav>
         <header class="header">
             <div class="header__content">
-                <h1 class="title">Привет</h1>
-                <h1 class="title color-description">Я Ринат.</h1>
-                <p class="header__para">Lorem ipsum, <b class="color-description">dolor sit</b> amet consectetur
-                    adipisicing elit. Ipsam, nobis.
+                <h1 class="title">— nice to meet you,</h1>
+                <h1 class="title color-description">Cole Kon</h1>
+                <p class="header__para">music, modeling and <b class="color-description">much more...</b> 
+                    listen to my stuff on all 
                     <br>
-                    Lorem ipsum dolor <b class="color-description">sit amet</b>.
+                    <b class="color-description">music steaming platforms</b>.
                 </p>
                 <div class="social__list">
                     <a href="https://www.instagram.com/krichite/" target="_blank" class="social__link click"><i
@@ -75,6 +64,9 @@
                     <a href="https://vk.com/rinatmiller" target="_blank" class="social__link click"><i
                             class="fab fa-vk"></i></a>
                 </div>
+            </div>
+            <div class="header__photo">
+                <img class="header__photo-front" src="/assets/front.PNG" alt="">
             </div>
         </header>
         <button class="mail__btn click" onclick="toggleModal()">
