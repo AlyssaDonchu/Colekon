@@ -1,8 +1,9 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Geometria', 'Arial Black', 'Arial';
+    font-family: 'Cedarville Cursive', cursive;;
 }
 
 @font-face {
@@ -144,6 +145,9 @@ button {
     border-radius: 50%;
     margin-top: 40px;
     margin-left: 60px;
+    display: flex;
+    align-items: right;
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -177,6 +181,7 @@ button {
 .header {
     position: absolute;
     display: flex;
+    justify-content: center;
     overflow: hidden;
     top: 50%;
     left: 50%;
