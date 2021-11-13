@@ -127,20 +127,13 @@ button {
   align-items: right;
 }
 
-@media (max-width: 1120px) {
-  .modal {
-    top: 0;
-    left: 0;
-    transform: none;
-    height: auto;
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 900px) {
   .header__photo {
     display: none;
   }
+}
+
+@media only screen and (max-width: 768px) {
   .modal {
     top: 0 !important;
     left: 0 !important;
@@ -148,10 +141,10 @@ button {
     height: auto !important;
     width: 100% !important;
     flex-direction: column-reverse;
-    border-radius: 0 !important;
+    align-items: center;
   }
   .modal__half {
-    width: 100% !important;
+    width: 70% !important;
   }
 }
 
