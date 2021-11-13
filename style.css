@@ -146,6 +146,9 @@ button {
   .modal__half {
     width: 70% !important;
   }
+  .shape {
+    display: none;
+  }
 }
 
 /* 
