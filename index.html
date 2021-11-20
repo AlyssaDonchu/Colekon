@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_ew2b5AYyNH8FSnXLgF629");
+        })();
+    </script>
 </head>
 
 <body onmousemove="moveBackground(event)">
@@ -79,30 +85,22 @@
         </a> -->
         <div class="modal">
             <div class="modal__half modal__about">
-                <!-- <h3 class="modal__title modal__title__about">Немного обо мне</h3>
-                <h4 class="modal__sub-title modal__sub-title--about">текст текст текст текст текст</h4> -->
                 <p class="modal__para">Please, contact me and I'll reply as soon as possible :)</p>
             </div>
             <div class="modal__half modal__contact">
                 <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-                <!-- <h3 class="modal__title modal__title--contact">
-                    Напиши мне напиши
-                </h3>
-                <h3 class="modal__sub-title modal__sub-title--contact">
-                    напиши мне ради бога
-                </h3> -->
                 <form onsubmit="contact(event)" class="contact__form">
                     <div class="form__item">
-                        <label class="form__item--label">Name</label>
-                        <input class="input" name="user_name" type="text"></input>
+                        <label class="form__item--label">Name*</label>
+                        <input class="input" name="user_name" type="text" required></input>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label">Email</label>
-                        <input class="input" name="user_email" type="email"></input>
+                        <label class="form__item--label">Email*</label>
+                        <input class="input" name="user_email" type="email" required></input>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label">Message</label>
-                        <textarea class="input" name="message" type="text"></textarea>
+                        <label class="form__item--label">Message*</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
                         Send
@@ -118,12 +116,8 @@
 
         </div>
         <img src="assets/note3.svg" class="shape shape--0">
-        <img src="assets/note1.svg" class="shape shape--1">
         <img src="assets/note4.svg" class="shape shape--2">
-        <img src="assets/note2.svg" class="shape shape--3">
-        <img src="assets/note1.svg" class="shape shape--5">
         <img src="assets/note0.svg" class="shape shape--7">
-        <img src="assets/note2.svg" class="shape shape--8">
     </section>
     <section id="portfolio" class="projects">
         <div class="container">
@@ -145,14 +139,6 @@
                                         <h3 class="project__description--title">
                                             Moon Isn't Beautiful Anymore
                                         </h3>
-                                        <!-- <h4 class="project__description--sub-title">
-                                        ля ля ля лаввап текст какой-то там
-                                    </h4>
-                                    <p class="project__description--para">
-                                        Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Odit praesentium,
-                                        placeat earum aperiam soluta est?
-                                    </p> -->
                                         <div class="project__description--links">
                                             <a href="" class="project__description--link"></a>
                                         </div>
@@ -169,14 +155,6 @@
                                     <h3 class="project__description--title">
                                         DARK GLORY, Vol. 1 - EP
                                     </h3>
-                                    <!-- <h4 class="project__description--sub-title">
-                                        ля ля ля лаввап текст какой-то там
-                                    </h4>
-                                    <p class="project__description--para">
-                                        Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Odit praesentium,
-                                        placeat earum aperiam soluta est?
-                                    </p> -->
                                     <div class="project__description--links">
                                         <a href="" class="project__description--link"></a>
                                     </div>
@@ -193,14 +171,6 @@
                         <h3 class="project__description--title">
                             Executioner
                         </h3>
-                        <!-- <h4 class="project__description--sub-title">
-                                        ля ля ля лаввап текст какой-то там
-                                    </h4>
-                                    <p class="project__description--para">
-                                        Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Odit praesentium,
-                                        placeat earum aperiam soluta est?
-                                    </p> -->
                         <div class="project__description--links">
                             <a href="" class="project__description--link"></a>
                         </div>
@@ -216,14 +186,6 @@
                     <h3 class="project__description--title">
                         Top Songs
                     </h3>
-                    <!-- <h4 class="project__description--sub-title">
-                                        ля ля ля лаввап текст какой-то там
-                                    </h4>
-                                    <p class="project__description--para">
-                                        Lorem ipsum dolor sit amet
-                                        consectetur adipisicing elit. Odit praesentium,
-                                        placeat earum aperiam soluta est?
-                                    </p> -->
                     <div class="project__description--links">
                         <a href="" class="project__description--link"></a>
                     </div>
@@ -261,7 +223,8 @@
                         Email
                     </a>
                 </div>
-                <div class="footer__copyright">Copyright © 2021 Alyssa Donchu</div>
+                <div class="footer__copyright">Copyright © 2021 Cole Kon</div>
+                <div class="footer__website-made-by">Website made by Alyssa Donchu-Angel </div>
             </div>
         </div>
     </footer>
